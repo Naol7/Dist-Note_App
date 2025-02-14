@@ -20,7 +20,7 @@ type Note struct {
 
 func init() {
 	var err error
-	uri := "mongodb+srv://naolgezahegne:x9fRCT7mxvC2oQMU@cluster0.pblqu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+	uri := "mongodb://localhost:27017"
 	clientOptions := options.Client().ApplyURI(uri)
 
 	client, err = mongo.Connect(context.TODO(), clientOptions)

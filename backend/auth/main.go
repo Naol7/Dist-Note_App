@@ -30,7 +30,7 @@ var client *mongo.Client
 
 func init() {
 	var err error
-	uri := "mongodb+srv://naolgezahegne:x9fRCT7mxvC2oQMU@cluster0.pblqu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+	uri := "mongodb://localhost:27017" // Change this to your MongoDB URI
 	if uri == "" {
 		panic("MONGODB_URI not set")
 	}
